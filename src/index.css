@@ -29,3 +29,38 @@
   }
 }
 /* ------------------------ // Base Styles ------------------------ */
+
+/* body::-webkit-scrollbar {
+  @apply w-3;
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-neutral-400/40 rounded-[3px];
+} */
+
+.custom-scrollbar {
+  overflow-y: auto;
+  overflow-x: auto;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply rounded-lg bg-transparent my-5;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply rounded-lg bg-neutral-400/40;
+}
+.invisible-scrollbar::-webkit-scrollbar {
+  width: 1px;
+}
+.invisible-scrollbar::-webkit-scrollbar-track {
+  @apply rounded-sm bg-transparent;
+}
+.invisible-scrollbar::-webkit-scrollbar-thumb {
+  @apply rounded-sm bg-transparent;
+}
